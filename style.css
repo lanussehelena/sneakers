@@ -1,0 +1,184 @@
+body {
+    margin: 0 auto;
+    max-width: 1140px;
+    font-family: Kumbh Sans;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.header {
+    max-width: 1140px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: hsl(220, 14%, 75%);
+    position: absolute;
+    top: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    gap: 20px;
+    justify-content: start;
+}
+
+a {
+    text-decoration: none;
+    padding: 16px 0;
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.carrinho-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrinho { 
+    width: 20px;
+    height: 20px;
+}
+
+.perfil {
+    width: 40px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.fotos-produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.fotos-produto img {
+    border-radius: 10px;
+}
+
+.img-principal {
+    grid-column: span 4;
+}
+
+.descricao-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.sneaker-company {
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.descricao-produto h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.descricao-produto p {
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 30px;
+}
+
+.precos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.preco-novo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.desconto {
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.preco-antigo {
+    color: hsl(220, 14%, 75%);
+    font-size: 0.75rem;
+    text-decoration: line-through;
+    margin-bottom: 30px;
+}
+
+.comprar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quantidade-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(220, 14%, 75%);
+    border-radius: 10px;
+}
+
+.botao-menos, .botao-mais, .quantidade {
+    padding: 12px 20px;
+}
+
+.botao-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0 80px;
+    border-radius: 10px;
+}
+
+.botao-comprar img {
+    height: 0.75rem;
+}
+
+.botao-comprar a {
+    color: hsl(0, 0%, 100%);
+}
