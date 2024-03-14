@@ -30,11 +30,11 @@ h1, p {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
-ul {
+nav ul {
     display: flex;
     margin: 0;
     padding: 0px;
@@ -56,6 +56,7 @@ li {
 img {
     max-width: 100%;
     display: inline-block;
+    border-radius: 10px;
 }
 
 .carrinho-perfil {
@@ -82,18 +83,14 @@ main {
     margin: 60px;
 }
 
-.fotos-produto {
+.fotos-produto ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.fotos-produto img {
-    border-radius: 10px;
-}
-
-.img-principal {
-    grid-column: span 4;
+    gap: 10px;
+    margin-top: 5px;
 }
 
 .descricao-produto {
@@ -157,7 +154,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(220, 14%, 75%);
+    background-color: hsl(223, 64%, 98%);
     border-radius: 10px;
 }
 
